@@ -12,8 +12,8 @@ container: cypress/browsers:latest #use latest, not version number
 
 steps:
 - script: |
-    npm ci
-    npm install mochawesome
+    npm ci --legacy-peer-deps
+    npm install mochawesome --legacy-peer-deps
   displayName: 'Installations'
 - script:
     npm cypress run --browser chrome --reporter mochawesome --reporter-options "reportFilename=chrome-results"
