@@ -14,7 +14,7 @@ steps:
 - script: |
     npm ci --legacy-peer-deps
     npm install mochawesome --legacy-peer-deps
-  displayName: 'Installations'
+  displayName: 'Installation'
 - script:
     npx cypress run --browser chrome --reporter mochawesome --reporter-options "reportFilename=chrome-results"
   displayName: 'Run Tests'
