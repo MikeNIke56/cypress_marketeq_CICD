@@ -16,7 +16,7 @@ describe('Cypress Test', () => {
 
             cy.contains("Filter").click()
 
-            cy.contains(data.Mexico).should('be.visible')
+            cy.contains(data.Mexico).should('not.be.visible')
         })
     })
 })
