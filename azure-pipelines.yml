@@ -12,7 +12,6 @@ container: cypress/browsers:latest #use latest, not version number
 
 steps:
 - script: |
-    npm ci
     npm install mochawesome
   displayName: 'Installations'
 - script:
