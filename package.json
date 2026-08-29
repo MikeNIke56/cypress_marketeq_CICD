@@ -1,0 +1,23 @@
+{
+  "name": "cypress_marketeq_cicd",
+  "version": "1.0.0",
+  "description": "Marketeq Cypress Automation",
+  "homepage": "https://github.com/MikeNIke56/cypress_marketeq_CICD#readme",
+  "bugs": {
+    "url": "https://github.com/MikeNIke56/cypress_marketeq_CICD/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeNIke56/cypress_marketeq_CICD.git"
+  },
+  "license": "ISC",
+  "author": "Micah W",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.21.1"
+  }
+}
