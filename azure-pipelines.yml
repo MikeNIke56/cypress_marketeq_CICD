@@ -11,7 +11,7 @@ pool:
 container: cypress/browsers:latest #use latest, not version number
 
 steps:
-- script: 
+- script:  |
     npm ci
   displayName: 'Installations'
 - script:
