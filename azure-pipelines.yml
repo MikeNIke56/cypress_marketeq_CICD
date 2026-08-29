@@ -11,9 +11,18 @@ pool:
 container: cypress/browsers:latest #use latest, not version number
 
 steps:
-- script:  |
+- script: |
     npm ci
+    npm install mochawesome
   displayName: 'Installations'
 - script:
-    npm cypress run --browser chrome
+    npm cypress run --browser chrome --reporter mochawesome --reporter-options "reportFilename=chrome-results"
   displayName: 'Run Tests'
+  continueOnError: true
+- publish: $(System.DefaultWorkingDirectory)/mochawesome-report
+  artifact: Report
+  condition: succeededOrFailed()
+- publish: $(System.DefaultWorkingDirectory)/cypress/screenshots
+  artifact: Screenshots
+  condition: failed()
+
