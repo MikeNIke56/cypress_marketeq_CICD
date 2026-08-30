@@ -1,5 +1,6 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('fails', () => {
     cy.visit('/')
+    //cy.title().should('eq', 'Blah')
   })
 })
